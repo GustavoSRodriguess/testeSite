@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Desafio SoftExpert</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></style>
+</head>
+<body>
+
+<!--Primeria parte-->
+
+<div class="banner">
+    <div class="header-container">
+    <div class="logo-soft">
+        <img class="logo" src="logo-lp-principal.png" data-all-status="loaded">
+    </div>
+    <div class="titulo-suite">Simplesmente inovadora</div>
+    <div class="container-slogan">
+        <div class="container-slogan">
+            <div class="slogan-suite">
+                A mais completa solução corporativa para a gestão integrada da conformidade, inovação e transformação digital
+            </div>
+        </div>
+    </div>
+    <div class="buttons-header">
+        <div class="apresentacao">
+            <i class="icone-computador"></i>
+            <p class="botao-conteudo">Solicite uma apresentação</p>
+        </div>
+        <div class="demonstracao">
+            <i class="icone-download"></i>
+            <p class="botao-download">Demonstração/Catálogo</p>
+        </div>
+        <div class="play">
+            <a href="https://www.youtube.com/watch?v=NLcTcsdO86U" target="_blank"><img class="play-button" src="play-solucao.png"></a>
+        </div>
+    </div>
+</div>    
+</div>
+
+<!--Segunda parte-->
+
+<div class="content">
+    <div class="objetivos">
+        <p class="p1">O SoftExpert Excellence Suite é uma solução que atende de forma colaborativa todas as demandas críticas para a excelência no desempenho organizacional.</p>
+        <p class="p2">Os componentes do SoftExpert Excellence Suite podem ser implementados à medida que as necessidades da empresa cresçam e exijam a incorporação de novas funcionalidades.</p>
+        <p class="p3">Em qualquer cenário, somente uma plataforma completa e integrada permitirá que todas estas iniciativas estejam interconectadas de forma produtiva e eficaz, como as peças de um quebra-cabeças.</p>
+    </div>
+    <div class="computador">
+        <a href="https://www.softexpert.com/pt-br/demo/demo-corporativa-desktop.html" target="_blank"><img class="computador-img" src="computador.png" ></a>
+        <p class="texto-comp">Demonstração corporativa</p>
+    </div>
+        
+</div>
+
+<div class="quebra-cabeca">
+    <img class="img-qb" src="quebra-cabecas.png">
+</div>
+
+<!-- tereceira parte -->
+
+<div class="screenshots">
+    <h2 class="print-texto">Screenshots</h2>
+</div>
+
+<div class="carrosel-wrap">
+    <img src="images/anterior.png" id="antBtn">
+        <div class="carrosel">
+        <div>
+            <span><img src="images/imagem-1.png"></span>
+            <span><img src="images/imagem-2.png"></span>
+            <span><img src="images/imagem-3.png"></span>
+            <!--<span><img src="images/imagem-4.png"></span>-->
+        </div>
+        <div>
+            <span><img src="images/imagem-5.png"></span>
+            <span><img src="images/imagem-6.png"></span>
+            <span><img src="images/imagem-7.png"></span>
+            <!--<span><img src="images/imagem-8.png"></span>-->
+        </div>
+    </div>
+    <img src="images/proximo.png" id="proxBtn">
+</div>
+
+<script>
+    let scrollContainer = document.querySelector(".carrosel");
+    let antBtn = document.getElementById("antBtn");
+    let proxBtn = document.getElementById("proxBtn");
+
+    scrollContainer.addEventListener("wheel", (evt) =>{
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY
+        scrollContainer.style.scrollBehavior = "auto";
+    })
+
+    proxBtn.addEventListener("click", () =>{
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 900;
+    })
+
+    antBtn.addEventListener("click", () =>{
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -= 900;
+    })
+</script>
+
+
+<div class="carrosel-wrap">
+    <img src="images/anterior.png" id="antBtn">
+        <div class="carrosel">
+        <div>
+            <span><img src="images/imagem-2-1.png"></span>
+            <span><img src="images/imagem2-2.png"></span>
+            <span><img src="images/imagem2-3.png"></span>
+            <!--<span><img src="images/imagem-4.png"></span>-->
+        </div>
+        <div>
+            <span><img src="images/imagem2-4.png"></span>
+            <span><img src="images/imagem2-5.png"></span>
+            <span><img src="images/imagem2-6.png"></span>
+            <!--<span><img src="images/imagem-8.png"></span>-->
+        </div>
+    </div>
+    <img src="images/proximo.png" id="proxBtn">
+</div>
+
+
+<!--Quarta parte-->
+
+<div class="cuboMagico">
+    <div class="cubo">
+        <img src="images/cubo.png">
+    </div>
+    <div class="conteudoCubo">
+        <h2 class="cuboTexto">Principais benefícios da solução</h2>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Uma única área de trabalho</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Uma única interface com o usuário</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Integração total de dados e funções</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Alta produtividade e confiabilidade</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Facilidade de uso e de aprendizagem</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Uma única portabilidade multiplataforma</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Um único acordo de nível de serviço</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Um único contato para suporte técnico</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Um único fornecedor responsável</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Compartilhamento das licenças entre as aplicações</p>
+    </div>
+</div>
+
+<!--Quinta parte-->
+
+
+
+
+    
+<div class="desafio-paragrafos">
+    <h2 class="header-desafio"> O desafio </h2>
+    <p>Organizações dos mais variados portes e setores de atuação estão enfrentando árduos desafios, incluindo a elevação dos custos, 
+       redução das margens de lucro e elevada ineficiência operacional. 
+        Além disto, elas tem que se adaptar a um ambiente de contínua elevação das exigências regulamentares e legais, 
+        somado a uma crescente pressão do mercado por maior qualidade, segurança e eficiência.
+         Por fim, estas organizações ainda se deparam com a complexa equação de otimizar seus custos sem baixar a qualidade da sua cadeia de fornecimento.
+    </p>
+    <p>Nesta mesma direção, as pressões e desafios para a competitividade aumentam a cada ano, 
+       em sintonia com o crescimento das expectativas dos clientes e acionistas que continuamente impactam diretamente as estratégias do negócio.
+    </p>
+</div>
+
+
+
+
+</body>
+</html>

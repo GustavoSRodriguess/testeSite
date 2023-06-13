@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Desafio SoftExpert</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></style>
+</head>
+<body>
+
+<!--Primeria parte-->
+<!--<dialog id="video=diolog" open="">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NLcTcsdO86U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</dialog>
+-->
+
+<div class="banner">
+    <div class="header-container">
+    <div class="logo-soft">
+        <img class="logo" src="logo-lp-principal.png" data-all-status="loaded">
+    </div>
+    <div class="titulo-suite">Simplesmente inovadora</div>
+    <div class="container-slogan">
+        <div class="container-slogan">
+            <div class="slogan-suite">
+                A mais completa solução corporativa para a gestão integrada da conformidade, inovação e transformação digital
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons-header">
+       <div class="apresentacao">
+            <i class="icone-computador"></i>
+            <p class="botao-conteudo">Solicite uma apresentação</p>
+        </div>
+        <div class="demonstracao">
+            <i class="icone-download"></i>
+            <p class="botao-download">Demonstração/Catálogo</p>
+        </div>
+        <div class="play">
+            <img onclick="openDialog('videoDialog')" class="play-button" src="play-solucao.png">
+        </div>
+    </div>
+
+    <dialog id="videoDialog">
+        <div class="videoDialogContainer">
+          <div class="closeButtonContainer">
+            <button class="closeButton" onclick="closeDialog('videoDialog')" >x</button>
+           </div>
+        
+          <iframe id="video" src="https://www.youtube.com/embed/NLcTcsdO86U" title="YouTube  video player" frameborder="0" allow="accelerometer; autoplay;   clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </dialog>
+
+    <div class="popup">
+        <div class="fecharBtn">&times;</div>
+        <div class="form">
+            <h2>Formulário para contato</h2>
+            <div class="elementos-form">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Insira seu email">
+            </div>
+            <div class="elementos-form">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" placeholder="Insira seu nome">
+            </div>
+            <div class="elementos-form">
+                <button>Enviar</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>    
+</div>
+
+<!--Segunda parte-->
+
+<div class="content">
+    <div class="objetivos">
+        <p class="p1">O SoftExpert Excellence Suite é uma solução que atende de forma colaborativa todas as demandas críticas para a excelência no desempenho organizacional.</p>
+        <p class="p2">Os componentes do SoftExpert Excellence Suite podem ser implementados à medida que as necessidades da empresa cresçam e exijam a incorporação de novas funcionalidades.</p>
+        <p class="p3">Em qualquer cenário, somente uma plataforma completa e integrada permitirá que todas estas iniciativas estejam interconectadas de forma produtiva e eficaz, como as peças de um quebra-cabeças.</p>
+    </div>
+    <div class="computador">
+        <a href="https://www.softexpert.com/pt-br/demo/demo-corporativa-desktop.html" target="_blank"><img class="computador-img" src="computador.png" ></a>
+        <a href="https://www.softexpert.com/pt-br/demo/demo-corporativa-desktop.html" target="_blank"><p class="texto-comp">Demonstração corporativa</p></a>
+    </div>
+        
+</div>
+
+<div class="quebra-cabeca">
+    <img class="img-qb" src="quebra-cabecas.png">
+</div>
+
+<!-- tereceira parte -->
+
+<div class="screenshots">
+    <h2 class="print-texto">Screenshots</h2>
+</div>
+
+<div class="carrosel-wrap">
+    <img src="images/anterior.png" class="antBtn">
+        <div class="carrosel">
+        <div>
+            <span><img src="images/imagem-1.png"></span>
+            <span><img src="images/imagem-2.png"></span>
+            <span><img src="images/imagem-3.png"></span>
+            <!--<span><img src="images/imagem-4.png"></span>-->
+        </div>
+        <div>
+            <span><img src="images/imagem-5.png"></span>
+            <span><img src="images/imagem-6.png"></span>
+            <span><img src="images/imagem-7.png"></span>
+            <!--<span><img src="images/imagem-8.png"></span>-->
+        </div>
+    </div>
+    <img src="images/proximo.png" class="proxBtn">
+</div>
+
+<div class="carrosel-wrap">
+    <img src="images/anterior.png" class="antBtn">
+        <div class="carrosel">
+        <div>
+            <span><img src="images/imagem-2-1.png"></span>
+            <span><img src="images/imagem2-2.png"></span>
+            <span><img src="images/imagem2-3.png"></span>
+            <!--<span><img src="images/imagem-4.png"></span>-->
+        </div>
+        <div>
+            <span><img src="images/imagem2-4.png"></span>
+            <span><img src="images/imagem2-5.png"></span>
+            <span><img src="images/imagem2-6.png"></span>
+            <!--<span><img src="images/imagem-8.png"></span>-->
+        </div>
+    </div>
+    <img src="images/proximo.png" class="proxBtn">
+</div>
+
+<script>
+    let carrosselWraps = document.querySelectorAll(".carrosel-wrap");
+
+    carrosselWraps.forEach((carrosselWrap) => {
+         let carrossel = carrosselWrap.querySelector(".carrosel");
+         let antBtn = carrosselWrap.querySelector(".antBtn");
+         let proxBtn = carrosselWrap.querySelector(".proxBtn");
+
+         carrossel.addEventListener("wheel", (evt) => {
+             evt.preventDefault();
+            carrossel.scrollLeft += evt.deltaY;
+            carrossel.style.scrollBehavior = "auto";
+         });
+
+         proxBtn.addEventListener("click", () => {
+            carrossel.style.scrollBehavior = "smooth";
+            carrossel.scrollLeft += 900;
+         });
+
+        antBtn.addEventListener("click", () => {
+            carrossel.style.scrollBehavior = "smooth";
+            carrossel.scrollLeft -= 900;
+         });
+    });
+</script>
+
+<!--Quarta parte-->
+
+<div class="cuboMagico">
+    <div class="cubo">
+        <img src="images/cubo.png">
+    </div>
+    <div class="conteudoCubo">
+        <h2 class="cuboTexto">Principais benefícios da solução</h2>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Uma única área de trabalho</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Uma única interface com o usuário</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Integração total de dados e funções</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Alta produtividade e confiabilidade</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Facilidade de uso e de aprendizagem</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Uma única portabilidade multiplataforma</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Um único acordo de nível de serviço</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Um único contato para suporte técnico</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Um único fornecedor responsável</p>
+        <p><img src="images/positivo.png" width="20px" height="auto"> Compartilhamento das licenças entre as aplicações</p>
+    </div>
+</div>
+
+<!--Quinta parte-->
+
+<div class="desafio-paragrafos">
+    <h2 class="header-desafio"> O desafio </h2>
+    <div class="texto">
+    <p>Organizações dos mais variados portes e setores de atuação estão enfrentando árduos desafios, incluindo a elevação dos custos, 
+       redução das margens de lucro e elevada ineficiência operacional. 
+        Além disto, elas tem que se adaptar a um ambiente de contínua elevação das exigências regulamentares e legais, 
+        somado a uma crescente pressão do mercado por maior qualidade, segurança e eficiência.
+         Por fim, estas organizações ainda se deparam com a complexa equação de otimizar seus custos sem baixar a qualidade da sua cadeia de fornecimento.
+    </p>
+    <p>Nesta mesma direção, as pressões e desafios para a competitividade aumentam a cada ano, 
+       em sintonia com o crescimento das expectativas dos clientes e acionistas que continuamente impactam diretamente as estratégias do negócio.
+    </p>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
